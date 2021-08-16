@@ -1,0 +1,86 @@
+.section-jewellery{
+    padding: 50px 0;
+    background-color: #f5f6f9;
+    .pagination{
+        justify-content: center;
+        margin-bottom: 0;
+        margin-top: 25px;
+        .page-link{
+            color: rgb(0, 136, 129);
+
+        }
+
+    }
+    .content-top{
+        position: relative;
+        margin-bottom: 10px;
+        input{
+            border-radius: 12px;
+            border: 1px solid #EEE;
+            outline: none;
+            width: 30px;
+            transition: all .5s ease-in-out;
+            padding-left: 28px;
+        }
+        i{
+            position: absolute;
+            top: 7px;
+            left: 7px;
+            color: rgba(185, 57, 77, 1);
+            pointer-events: none;
+        }
+      
+    }
+ .content-top input:focus{
+     width: 200px;
+
+ }
+ .sellerone{
+    .bottom-p-one{
+        margin: 12px 0 0;
+
+      }
+      .bottom-p-two{
+        margin-bottom: 0px;
+        color:  rgba(185, 57, 77, 1);;
+      }
+      .rate {
+        color: #ff9600;
+        outline: none;
+        margin-bottom: 20px;
+    }
+    .content{
+        position: relative;
+      img{
+          width: 100%;
+          height: 300px;
+      }
+      .sellertwo{
+          position: absolute;
+          top: 5px;
+            right: 5px;
+            opacity: 0;
+            transition: all .5s ease-in-out;
+           
+            
+            i {
+                display: block;
+                color: #FFF;
+                background-color:rgba(185, 57, 77, 1);
+                margin-bottom: 10px;
+                width: 25px;
+                height: 25px;
+                line-height: 25px;
+                text-align: center;
+                cursor: pointer;
+            }
+      }
+     
+    
+}
+
+
+}}
+.section-jewellery .container .sellerone:hover .content .sellertwo{
+    opacity: 1;
+}

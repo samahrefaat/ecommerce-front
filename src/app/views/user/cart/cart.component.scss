@@ -1,0 +1,43 @@
+$padding: 50px 0;
+section{
+    padding: $padding;
+    .cart-table{
+        .container{
+            overflow: auto;
+            table{
+                td{
+                    border: 2px solid #EEE;
+                    padding: 20px;
+                }
+                th{
+                    border: 2px solid #EEE;
+                    padding-left: 8px;
+                    padding-right: 8px;
+                    input{
+                        width: 25%;
+                        border: 1px solid #EEE;
+                        border-radius: 2px;
+                    }
+                    i{
+                        cursor: pointer;
+                        transition: all .5s ease-in-out;
+                        &:hover{
+                            color: rgb(43, 124, 43);
+                        }
+                    
+                    }
+                    img {
+                        height: 130px;
+                        width: 100%;
+                        padding: 8px 0;
+                    }
+                }
+            }
+        }
+        button{
+            transition: all .5s ease-in-out;
+            margin-top: 10px;
+
+        }
+    }
+}

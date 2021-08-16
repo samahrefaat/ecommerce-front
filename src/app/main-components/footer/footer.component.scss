@@ -1,0 +1,65 @@
+.page-footer{
+   
+    padding: 10px 0;
+ 
+    background-color:black ;
+    color: white;
+    width: 100%;
+  
+    p{
+        font-size: 13px;
+        margin-bottom: 0;
+      
+    }
+    .content{
+        
+
+       i{
+        margin-right: 25px;
+        cursor: pointer;
+        margin-top: 8px;
+       }
+    }
+    
+    ul{
+       
+        li{
+            
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 13px;
+                
+            }
+        }
+    
+}
+    input{
+        margin-top: 9px;
+        width: 70%;
+        border: none;
+        border-radius: 3px;
+        &::placeholder{
+            text-align: center;
+            color: black;
+        }
+        
+    }
+   
+    button{
+        margin-top: 9px;
+        transition: all .5s ease-in-out;
+       
+       
+
+
+    }
+    
+
+}
+.footer-copyright{
+    background-color: #000;
+    color: white;
+    font-size: 12px;
+    padding: 12px 0
+}

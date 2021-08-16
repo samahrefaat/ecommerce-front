@@ -1,0 +1,175 @@
+<div class="slider">
+    <div class="layout">
+        <div class="container">
+            <div class="content">
+                <h2 class="h1 one"> THE BEST</h2>
+                <h2 class="h1 two"> E-COMERCE</h2>
+                <p>hello to you we will help you to find everything you need witn private prices. </p>
+<button>BUY NOW</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--endslider-->
+
+<!-- Start Best Seller -->
+<div class="bestseller">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-sm-6">
+            <div class="content-text">
+                <h3> Best Seller</h3>
+                <p class="one">The best productions from us</p>
+                <p class="two">hello to you we will help you to find everything you need witn private prices,hello to you we will help you to find everything you need witn private prices. </p>
+ 
+            </div>
+        </div>
+        <div class="col-lg-3 col-sm-6" *ngFor='let Seller of bestSeller'>
+            <div class="sellerone">
+                <div class="content">
+                    <img [src]='Seller.src'>
+                    <div class="sellertwo">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-allergies" routerLink="infoProduct"></i>
+                    </div>
+
+                </div>
+                <p class="bottom-p-one"> {{Seller.text}}</p>
+                <p class="bottom-p-two"> ${{Seller.price}}</p>
+                <ngb-rating class="rate" [rate]='Seller.rate'></ngb-rating>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+<!-- End Best Seller -->
+<!-- Start Static Blocks -->
+<div class="static-blocks text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-gem fa-2x"></i>
+                    <h4>Special offers</h4>
+                    <p>Shop Big Save Big</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-paper-plane fa-2x"></i>
+                    <h4>Free delivery</h4>
+                    <p>On Orders Above $99</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-retweet fa-2x"></i>
+                    <h4>30 Days Return</h4>
+                    <p>Policy We Offers</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="content">
+                    <i class="fas fa-rocket fa-2x"></i>
+                    <h4>Fastest Shipping</h4>
+                    <p>2 Days Express</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- End Static Blocks -->
+<!-- Start Categories -->
+<div class="categories text-center">
+    <div class="content">
+        <img src='../../../assets/image/one.PNG'>
+    </div>
+    <div class="content">
+        <img src="../../../assets/image/one.PNG">
+    </div>
+    <div class="content">
+        <img src="../../../assets/image/one.PNG">
+    </div>
+</div>
+<!-- End Categories -->
+<!-- Start Product List -->
+<div class="products-list">
+    <div class="container">
+        <div class="content-top text-center">
+            <h2>Featured Products</h2>
+            <p>Newest trends from top brands</p>
+        </div>
+        <div class="content-bottom">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6" *ngFor='let product of featuredProducts'>
+                <div class="products">
+                    <div class="content">
+                        <img [src]='product.src'>
+                        <div class="icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-allergies"></i>
+                        </div>
+                    </div>
+                    <p class="bottom-p-one">{{product.text}}</p>
+                    <p class="bottom-p-two">${{product.price}}</p>
+                    <ngb-rating class="rate" [rate]='product.rate'></ngb-rating>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Product List -->
+<!--start-client-->
+<div class="client text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-sm-6">
+                <div class="content">
+                    <img src="../../../assets/image/one.svg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="content">
+                    <img src="../../../assets/image/two.svg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="content">
+                    <img src="../../../assets/image/three.svg">
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+                <div class="content">
+                    <img src="../../../assets/image/four.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end-client-->
+<!--start-subscribe-->
+<div class="subscibe">
+    
+        <div class="container text-center">
+            <div class="content-top">
+                <h2>Get Out Special Discount</h2>
+                <p>hello to you we will help you to find everything you need witn private prices. </p>
+
+
+            </div>
+            <div class="content-bottom mt-4">
+                <input type="email" placeholder="E-mail address" class="form-control">
+                <button class="btn btn-success">GET COUPON NOW</button>
+            </div>
+      
+    </div>
+</div>
+<!--end-subscribe-->

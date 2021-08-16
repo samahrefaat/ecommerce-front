@@ -1,0 +1,36 @@
+<section>
+    <div class="cart-table text-center">
+      <div class="container">
+        <table>
+          <thead>
+              <td>Product image</td>
+              <td>Product name</td>
+              <td>Color & Size</td>
+              <td>Quantity</td>
+              <td>Price</td>
+              <td>Total</td>
+              <td>Delete</td>
+          </thead>
+          <tbody>
+              <tr  *ngFor="let cart of carts">
+                  <th><img [src]="cart.src"></th>
+                  <th>{{cart.Text}}</th>
+                  <th>
+                      Color: {{cart.color}}<br>
+                      Size: {{cart.size}}
+                  </th>
+                  <th>
+                      <input type="number" [value]="cart.quantity">
+                  </th>
+                  <th>${{cart.price}}</th>
+                  <th>${{cart.total}}</th>
+                  <th><i class="far fa-trash-alt"></i></th>
+              </tr>
+            </tbody>
+        </table>
+      </div>
+      <div class="container">
+        <button class="btn btn-success" routerLink='/'>CONTINUE SHOPPING</button>
+      </div>
+      </div>
+    </section>
